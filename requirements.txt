@@ -1,0 +1,15 @@
+pandas>=2.0
+numpy>=1.24
+pyarrow>=14
+networkx>=3.1
+python-louvain>=0.16
+geopandas>=0.14
+libpysal>=4.9
+esda>=2.5
+spreg>=1.4
+linearmodels>=5.3
+pydynpd>=0.2
+pymannkendall>=1.4
+scipy>=1.11
+statsmodels>=0.14
+matplotlib>=3.7
