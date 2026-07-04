@@ -1,0 +1,9 @@
+﻿Table 4-3. Dynamic panel estimates (Dynamic LSDV and system GMM).
+,Dynamic LSDV,System GMM (baseline),System GMM (short IV),System GMM (endog. PageRank)
+Net migration rate (t−1),0.443*** (0.047),0.576*** (0.042),0.547*** (0.052),0.586*** (0.042)
+PageRank (t−1),-2658.2*** (902.1),-485.3 (918.8),179.5 (1106.3),-1910.4* (1062.2)
+Controls / Year effects,✓ / ✓,✓ / ✓,✓ / ✓,✓ / ✓
+Hansen test (p),—,0.521,0.350,0.812
+AR(2) test (p),—,0.578,0.518,0.614
+Instruments,—,33,29,34
+N,"3,568","3,122","3,122","3,122"

@@ -1,0 +1,8 @@
+﻿Table 4-5. Robustness and subsample estimates of the lagged-PageRank coefficient.
+Specification,PageRank (t−1),Remarks
+"SDM direct effect, KNN-5 weights",3463.3*** (465.1),ρ = −0.068**; indirect 161.6 (p = 0.84)
+FE-M3: capital region,2876.0*** (807.7),"N = 1,056"
+FE-M3: non-capital region,3823.7** (1622.1),"N = 2,512"
+FE-M3: medium-sized cities,5188.2*** (922.5),"N = 1,776"
+FE-M3: large cities,1965.3** (863.0),N = 368
+FE-M3: small rural counties,5156.9 (7219.5),"N = 1,424"

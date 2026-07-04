@@ -1,0 +1,13 @@
+﻿"Table 3-3. Descriptive statistics (Track B estimation sample, N = 3,568)."
+Variable,Mean,SD,Min,Max
+"Net migration rate (per 1,000)",-0.49,18.36,-110.23,206.22
+PageRank (t−1),0.0040,0.0040,0.0010,0.0230
+ln pop. density,6.45,2.10,2.98,10.27
+Youth ratio (%),18.50,5.48,7.12,41.26
+Aging ratio (%),19.78,8.68,5.36,47.43
+Fiscal self-reliance (%),22.92,14.52,3.85,85.69
+"Physicians per 1,000",2.82,2.49,0.80,22.40
+Total fertility rate,1.14,0.33,0.30,2.54
+Cultural facilities,11.28,7.74,1.00,71.00
+"Childcare per 1,000",15.09,4.03,3.80,32.80
+Distance to Seoul (km),166.59,114.07,1.40,368.90

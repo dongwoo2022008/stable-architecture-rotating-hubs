@@ -1,0 +1,4 @@
+﻿Table 3-1. Analytical design by track.
+Track,Period,Observations,Research questions,Core methods
+A. Descriptive network,2008-2025 (18 yrs),"4,122 (229 × 18)",RQ1 (structural evolution),OD networks; centrality; Louvain; global/local Moran; hub persistence
+B. Spatial panel,2009-2024 (16 yrs),"3,568 (223 × 16, balanced)","RQ2 (network position), RQ3 (spillovers)",Two-way FE; system GMM; SAR/SDM with effect decomposition

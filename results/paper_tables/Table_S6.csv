@@ -1,0 +1,17 @@
+﻿Table S6. Control variables and baseline inclusion (full candidate set).
+Domain,Variable,Baseline (FE),Reason if excluded
+Economy,Fiscal self-reliance (%),Included,—
+Economy,Employment rate; businesses,Excluded,Coverage begins 2017
+Demography,"Youth ratio (20-39, %)",Included,—
+Demography,"Aging ratio (65+, %)",Included,—
+Demography,ln population density,Included,—
+Demography,ln population,Excluded,Collinear with density (r = 0.86 with PageRank)
+Dynamics,Total fertility rate,Included,—
+Dynamics,Natural increase,Excluded,Overlaps fertility and age structure
+Healthcare,"Physicians per 1,000",Included,—
+Healthcare,Hospital beds,Excluded,Collinear with physicians
+Living SOC,Cultural facilities,Included,—
+Welfare,"Childcare per 1,000 infants",Included,—
+Welfare,Senior facilities; academies; sewerage; extinction risk,Excluded,Missingness or redundancy
+Location,Distance to Seoul (km),OLS only,Time-invariant (absorbed by municipality FE)
+Period,COVID indicator (2020-2022),OLS only,Common shock (absorbed by year FE)

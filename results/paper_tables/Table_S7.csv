@@ -1,0 +1,9 @@
+﻿Table S7. Correlation matrix of principal variables (estimation sample).
+,net_rate,pagerank_lag1,fiscal_indep,youth_ratio,aging_ratio,ln_pop_density,doctor_per1000
+net_rate,1.000,,,,,,
+pagerank_lag1,0.093,1.000,,,,,
+fiscal_indep,0.166,0.627,1.000,,,,
+youth_ratio,0.011,0.536,0.592,1.000,,,
+aging_ratio,-0.092,-0.650,-0.677,-0.783,1.000,,
+ln_pop_density,-0.111,0.708,0.562,0.632,-0.706,1.000,
+doctor_per1000,-0.110,0.192,0.271,0.190,-0.153,0.376,1.000

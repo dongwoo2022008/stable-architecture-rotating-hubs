@@ -1,0 +1,8 @@
+﻿Table 3-2. Network centrality measures.
+Measure,Definition,Role
+PageRank,"Relative influence of a node in the directed weighted flow network, recursively weighting the importance of connected nodes",Main explanatory variable (entered at t−1)
+In-degree,Number of incoming migration links,Descriptive
+In-strength,Total weighted inflow,Descriptive (top-20 share in Track A)
+Betweenness,Frequency on shortest paths between other nodes,Descriptive
+Closeness,Inverse average distance to all other nodes,Descriptive
+Out-degree,Number of outgoing migration links,Descriptive

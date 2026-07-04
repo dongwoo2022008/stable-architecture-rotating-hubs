@@ -1,0 +1,22 @@
+﻿Table S4. Top-20 migration hubs by PageRank centrality (2008 vs. 2025).
+Rank,2008 hub,PageRank,2025 hub,PageRank
+1,Suwon,0.0189,Hwaseong,0.0183
+2,Hwaseong,0.0179,Yongin,0.0181
+3,Songpa-gu,0.0166,Suwon,0.0180
+4,Yongin,0.0159,Goyang,0.0138
+5,Goyang,0.0153,Incheon Seo-gu,0.0133
+6,Seongnam,0.0139,Gwanak-gu,0.0133
+7,Bucheon,0.0134,Seongnam,0.0132
+8,Gangnam-gu,0.0126,Pyeongtaek,0.0127
+9,Gwanak-gu,0.0124,Songpa-gu,0.0124
+10,Gangseo-gu,0.0119,Cheonan,0.0119
+11,Incheon Namdong-gu,0.0117,Gangnam-gu,0.0119
+12,Changwon,0.0115,Gangdong-gu,0.0119
+13,Ansan,0.0115,Cheongju,0.0118
+14,Cheonan,0.0107,Daejeon Seo-gu,0.0117
+15,Incheon Bupyeong-gu,0.0106,Changwon,0.0113
+16,Nowon-gu,0.0103,Gangseo-gu,0.0098
+17,Gwangju Buk-gu,0.0102,Anyang,0.0098
+18,Daegu Dalseo-gu,0.0102,Namyangju,0.0095
+19,Jeonju,0.0102,Dongdaemun-gu,0.0095
+20,Namyangju,0.0101,Daejeon Yuseong-gu,0.0095

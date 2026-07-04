@@ -1,0 +1,11 @@
+﻿"Table 4-4. Spatial Durbin model: direct, indirect, and total effects."
+Variable,Direct,Indirect,Total
+PageRank (t−1),3224.3***,937.5,4161.7***
+ln pop. density,-8.52,-34.93***,-43.45***
+Youth ratio,2.22***,-0.540,1.68***
+Aging ratio,0.957**,-1.61***,-0.654
+Fiscal independence,0.102*,-0.075,0.028
+"Doctors per 1,000",-0.879,3.46***,2.58*
+Fertility,6.26***,0.635,6.89*
+Cultural facilities,-0.217,0.268,0.051
+"Childcare per 1,000",-1.07***,0.672***,-0.400
