@@ -3,6 +3,24 @@
 Replication and verification package. Every table and figure in the manuscript
 is reproducible from this repository; `python verify.py` confirms it automatically.
 
+## Reproduction / Verification
+
+This repo is a self-contained reproducibility archive. To reproduce every
+published number on Windows:
+
+```
+git clone -c core.autocrlf=false https://github.com/dongwoo2022008/stable-architecture-rotating-hubs.git
+cd stable-architecture-rotating-hubs
+```
+
+Then open **Anaconda Prompt** and run `verify_windows.bat` (choose **[1] Quick**).
+
+Expected output: `ALL CHECKS PASSED`.
+
+Full procedure, pinned environment, and troubleshooting: see **[VERIFICATION.md](VERIFICATION.md)**.
+
+Requires Anaconda/Miniconda and Git for Windows.
+
 ## Quick start
 ```bash
 pip install -r requirements.txt
