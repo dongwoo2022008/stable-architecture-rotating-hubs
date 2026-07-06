@@ -9,6 +9,7 @@ This repo is a self-contained reproducibility archive. To reproduce every
 published number on Windows:
 
 ```
+git lfs install
 git clone -c core.autocrlf=false https://github.com/dongwoo2022008/stable-architecture-rotating-hubs.git
 cd stable-architecture-rotating-hubs
 ```
@@ -19,7 +20,7 @@ Expected output: `ALL CHECKS PASSED`.
 
 Full procedure, pinned environment, and troubleshooting: see **[VERIFICATION.md](VERIFICATION.md)**.
 
-Requires Anaconda/Miniconda and Git for Windows.
+Requires Anaconda/Miniconda and Git for Windows (with Git LFS).
 
 ## Quick start
 ```bash

@@ -7,11 +7,11 @@ REM  Repository: stable-architecture-rotating-hubs
 REM
 REM  Run this FROM THE REPO ROOT in "Anaconda Prompt". It:
 REM    1) builds a pinned conda env (python 3.10 + verified package versions)
-REM    2) normalizes line endings so the sha256 checksums match
+REM    2) fetches Git LFS data and normalizes line endings so checksums match
 REM    3) runs the author's verify.py
 REM
-REM  PREREQUISITES: Anaconda/Miniconda, Git for Windows.
-REM  (Recommended clone:  git clone -c core.autocrlf=false <repo-url> )
+REM  PREREQUISITES: Anaconda/Miniconda, Git for Windows (with Git LFS).
+REM  (Recommended clone:  git lfs install  &&  git clone -c core.autocrlf=false <repo-url> )
 REM =====================================================================
 set "ENVNAME=sarh_verify"
 set "ROOT=%~dp0"
@@ -44,8 +44,10 @@ if exist "%ROOT%requirements-lock.txt" (
 )
 
 echo.
-echo [4/5] Normalizing line endings (so sha256 checksums match)...
+echo [4/5] Fetching Git LFS data + normalizing line endings (so sha256 checksums match)...
 where git >nul 2>nul && (
+  git lfs install >nul 2>nul
+  git lfs pull >nul 2>nul
   git config core.autocrlf false
   git checkout --force >nul 2>nul
 )
@@ -68,9 +70,9 @@ if errorlevel 1 (
   echo ============================================================
   echo   VERIFICATION FAILED - read the FAIL lines above.
   echo   If ONLY "sha256 ..." lines failed, that is a byte-integrity
-  echo   issue (usually line endings), NOT an analysis error: the
-  echo   canonical-value and live-re-estimation checks passing means
-  echo   the numbers themselves are correct.
+  echo   issue (usually line endings or missing Git LFS data), NOT an
+  echo   analysis error: the canonical-value and live-re-estimation
+  echo   checks passing means the numbers themselves are correct.
   echo ============================================================
 ) else (
   echo.

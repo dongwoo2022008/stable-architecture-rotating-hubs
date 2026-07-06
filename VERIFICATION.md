@@ -19,7 +19,8 @@ If only the `sha256` checks fail while layers 2–3 pass, the analysis is correc
 
 - Windows 10/11
 - Anaconda or Miniconda
-- Git for Windows
+- Git for Windows, including **Git LFS** (`git lfs install`) — the source file
+  `data/source/migration_long.parquet` (~72 MB) ships via Git LFS
 
 ## Environment (pinned — required)
 
@@ -29,13 +30,12 @@ The loose bounds in `requirements.txt` are **not** sufficient for reproduction; 
 - `numpy==1.26.4`, `scipy==1.13.1` (mandatory — other combinations crash)
 - `wcwidth>=0.8.2`, `prettytable==3.18.0`
 
-A full pinned lock is provided in `requirements-lock.txt`.
-
 ## One-click verification (recommended)
 
 1. Clone with line-ending conversion **disabled** (so checksums match):
 
    ```
+   git lfs install
    git clone -c core.autocrlf=false https://github.com/dongwoo2022008/stable-architecture-rotating-hubs.git
    cd stable-architecture-rotating-hubs
    ```
@@ -59,7 +59,8 @@ A full pinned lock is provided in `requirements-lock.txt`.
 ```
 conda create -n sarh_verify python=3.10 -y
 conda activate sarh_verify
-pip install -r requirements-lock.txt
+pip install -r requirements.txt
+pip install --force-reinstall --no-cache-dir numpy==1.26.4 scipy==1.13.1 "wcwidth>=0.8.2"
 python verify.py            # quick (~1-2 min)
 python verify.py --full     # full end-to-end re-run (~30-60 min)
 ```
@@ -73,5 +74,6 @@ python verify.py --full     # full end-to-end re-run (~30-60 min)
 | `AttributeError: module 'wcwidth' has no attribute 'width'` | `wcwidth` too old (0.2.x) for `prettytable` 3.18 | `wcwidth>=0.8.2` |
 | `N sha256 CHECKS FAILED` (all `.csv`; the `.parquet` passes) | git converted `LF`→`CRLF` on checkout | clone with `-c core.autocrlf=false`, or `git config core.autocrlf false && git checkout --force` |
 | `python` prints nothing / `conda` not recognized | Windows Store `python` stub, or conda not on PATH | use **Anaconda Prompt**; the batch calls the env interpreter by full path |
+| `sha256 ... migration_long.parquet` fails; the file is only ~130 bytes | Git LFS not installed — only the LFS pointer was fetched | run `git lfs install` then `git lfs pull` (or re-clone) |
 
 > The verification must be run on the **pristine clone** (before re-running the pipelines). Re-running Track A/B overwrites the result tables and will change their sha256 by design; use `verify.py --full`, which checks the pristine files first and then re-runs.

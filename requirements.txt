@@ -1,6 +1,7 @@
 pandas>=2.0
-# pinned for reproducibility: numpy>=2 breaks numba/libpysal; unpinned scipy
-# breaks the BLAS/LAPACK linkage (Windows fatal exception 0xc06d007f)
+# pinned for reproducibility (see VERIFICATION.md):
+#   numpy>=2 breaks numba/libpysal; unpinned scipy breaks the BLAS/LAPACK
+#   linkage on Windows -> "Windows fatal exception 0xc06d007f"
 numpy==1.26.4
 pyarrow>=14
 networkx>=3.1
